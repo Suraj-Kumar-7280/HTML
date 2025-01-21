@@ -1,0 +1,88 @@
+<!--
+ID & CLASS
+Id :- The id attribute specifies a unique id for an HTML element.
+CLASS :- The class attribute in HTML is used to specify one or more class names for an HTML element
+CheckBox :- An HTML checkbox is a square box that allows users to select one or more options from a list.
+TextArea :- The textarea element is often used in a form, to collect user inputs like comments or reviews.
+
+select :- The <select> element is used to create a drop-down list.
+Option :- The <option> HTML element is used to define an item contained in a 
+<select> , an <optgroup> , or a <datalist> element.
+
+Iframe :- An iframe is an HTML element that embeds another HTML document within a parent page
+Attributes
+src: Specifies the URL of the document to embed in the iframe 
+width: Sets the width of the iframe element 
+height: Sets the height of the iframe element 
+frameborder: Specifies whether or not to display a border around the iframe 
+allowfullscreen: Indicates whether the iframe can be displayed in fullscreen mode 
+scrolling: Controls whether or not the iframe should have scrollbars 
+
+video :- The <video> tag is used to embed video content in a document, such as a movie clip or other video streams.
+Attributes
+-Controls:- 
+-Height:-
+-Width:-
+-Loop:-
+-Autoplay:-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class & Id</title>
+</head>
+<body>
+   <form action="/action.php">
+        <input type="text" placeholder="UserName">
+        <br><br>
+        <input type="text" placeholder="password">
+        <br><br>
+
+        <h4>Select Your Class</h4>
+        <label for="105">
+            <input type="radio" value="Class XI" name="class" id="105">Class XI
+        </label>
+        <br>
+        <br>
+        <label for="106">
+            <input type="radio" value="Class XII" name="class" id="106">Class XII
+        </label>
+        <br>
+        <h4>Select Four Class</h4>
+        <label for="math">
+        <input type="checkbox" value="math" name="subject" id="101">Math
+        </label>
+        <br><br>
+        <label for="Phy">
+        <input type="checkbox" value="Phy" name="subject" id="102">physics
+         </label>
+        <br><br>
+        <label for="AI">
+        <input type="checkbox" value="AI" name="subject" id="103">Artificial Intelligence
+        </label>
+        <br><br>
+        <label for="DSA">
+        <input type="checkbox" value="DSA" name="subject" id="104">Data Structure 
+        </label>
+        <br><br>
+        Select Your City
+        <select name="" id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Benglore">Benglore</option>
+        </select>
+
+        <br><br>
+        <textarea name="city" id="101" placeholder="Please give your valuable feedback here" rows="5">Feedback</textarea>
+        <input type="submit" value="sumbit">
+        <br><br>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UUM_kdSlAwU?si=Fu2Z34a_WABORiNJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://google.com"></iframe>
+
+        <video src="myVid.mp4">My Video</video>
+    </form>
+</body>
+</html>  
